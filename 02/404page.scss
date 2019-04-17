@@ -1,0 +1,169 @@
+$white: #EDEDED;
+$grey: #BFC0C0;
+$dark: #585959;
+$light: #D3DEEA;
+
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Lato');
+
+$big: 'Avril Fatface', serif;
+$body: 'Lato', sans-serif;
+
+body {
+    background: $light;
+}
+
+.top {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin-top: -40px;
+}
+
+.ghost {
+    width: 16%;
+    height: 32%;
+    left: 41%;
+    top: 36%;
+    position: absolute;
+    border-radius: 50% 50% 0 0;
+    background: $white;
+    border: 2px solid $grey;
+    border-bottom: none;
+    animation: float 2s ease-out infinite;
+}
+
+.ghost-copy {
+    width: 80%;
+    height: 55%;
+    left: 6%;
+    top: 67%;
+    position: absolute;
+    border-radius: 50% 50% 0 0;
+    background: $white;
+    border: 1px solid $grey;
+    border-bottom: none;
+    animation: float 2s ease-out infinite;
+    z-index: 0;
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    top: 20%;
+}
+
+.eye, .eye-right {
+    position: absolute;
+    background: $dark;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    top: 40%;
+}
+
+.eye {
+    left: 25%;
+}
+
+.eye-right {
+    right: 25%;
+}
+
+.mouth {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    width: 10px;
+    height: 10px;
+    border: 3px solid;
+    border-radius: 50%;
+    border-color: transparent $dark $dark transparent;
+    transform: rotate(45deg);
+}
+
+.one, .two, .three, .four {
+    position: absolute;
+    background: $white;
+    top: 85%;
+    width: 25%;
+    height: 23%;
+    border: 1px solid $grey;
+    z-index: 0;
+}
+
+.one {
+    border-radius: 0 0 100% 30%;
+    left: -9px;
+}
+
+.two {
+    left: 23%;
+    border-radius: 0 0 50% 50%;
+}
+
+.three {
+    left: 50%;
+    border-radius: 0 0 50% 50%;
+}
+
+.four {
+    left: 74.5%;
+    border-radius: 0 0 30% 100%;
+}
+
+.shadow {
+    position: absolute;
+    width: 30%;
+    height: 7%;
+    background: $grey;
+    left: 35%;
+    top: 80%;
+    border-radius: 50%;
+    animation: scale 2s infinite;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes float {
+    50% {
+       transform: translateY(12px);
+    }
+  }
+  
+
+/* text styling */
+h1 {
+    font-family: $big;
+    color: $white;
+    text-align: center;
+    font-size: 9em;
+    margin: 0;
+    text-shadow: -1px 0 $grey, 0 1px $grey, 1px 0 $grey, 0 -1px $grey;
+}
+
+h3 {
+    font-family: $body;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $grey;
+    margin-top: -20px;
+    font-weight: 900;
+}
