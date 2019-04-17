@@ -32,16 +32,16 @@ body {
 
 .ghost-copy {
   width: 80%;
-  height: 53%;
-  left: 5%;
+  height: 55%;
+  left: 6%;
   top: 67%;
   position: absolute;
   border-radius: 50% 50% 0 0;
   background: #EDEDED;
   border: 1px solid #BFC0C0;
   border-bottom: none;
-  -webkit-animation: float 3s ease-out infinite;
-          animation: float 3s ease-out infinite;
+  -webkit-animation: float 2s ease-out infinite;
+          animation: float 2s ease-out infinite;
   z-index: 0;
 }
 
@@ -151,6 +151,20 @@ body {
   100% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
+  }
+}
+
+@-webkit-keyframes float {
+  50% {
+    -webkit-transform: translateY(12px);
+            transform: translateY(12px);
+  }
+}
+
+@keyframes float {
+  50% {
+    -webkit-transform: translateY(12px);
+            transform: translateY(12px);
   }
 }
 

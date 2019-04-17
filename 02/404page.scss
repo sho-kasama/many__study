@@ -40,15 +40,15 @@ body {
 
 .ghost-copy {
     width: 80%;
-    height: 53%;
-    left: 5%;
+    height: 55%;
+    left: 6%;
     top: 67%;
     position: absolute;
     border-radius: 50% 50% 0 0;
     background: $white;
     border: 1px solid $grey;
     border-bottom: none;
-    animation: float 3s ease-out infinite;
+    animation: float 2s ease-out infinite;
     z-index: 0;
 }
 
@@ -140,6 +140,13 @@ body {
         transform: scale(1.1);
     }
 }
+
+@keyframes float {
+    50% {
+       transform: translateY(12px);
+    }
+  }
+  
 
 /* text styling */
 h1 {
