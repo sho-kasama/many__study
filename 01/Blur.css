@@ -2,23 +2,23 @@ html {
     background-color: #B1F9D0;
   }
   
-  div {
+  .one {
     margin: 2rem auto;
     background-color: #1BFF4A;
     width: 100px;
     height: 100px;
     border-radius: 100%;
-    animation: .75s bounce infinite;
+    animation: .90s bounce infinite;
   }
   
-  html:hover div {
-    animation-duration: 4s;
+  html:hover .one {
+    animation-duration: .80s;
   }
   
   @keyframes bounce {
     0% {
       transform: none;
-      animation-timing-function: cubic-bezier(.78,.01,.83,.67);
+      animation-timing-function: ease-in;
       box-shadow: none;
     }
     
@@ -29,17 +29,17 @@ html {
     }
     
     50% {
-      width: 90px;
-      height: 110px;
-      transform: translateY(350px);
-      filter: blur(2px);
+      width: 100px;
+      height: 100px;
+      transform: translateX(300px);
+      filter: blur(5px);
       box-shadow: none;
     }
     
     55% {
-      transform: translateY(360px);
-      width: 110px;
-      height: 90px;
+      transform: translateX(360px);
+      width: 100px;
+      height: 100px;
       box-shadow: -5px 0px 3px #1BFF4A, 5px 0px 3px #1BFF4A;
     }
     
@@ -55,3 +55,58 @@ html {
       box-shadow: none;
     }
   }
+
+
+.two {
+  margin: 5rem;
+  background-color: #4DF9B9;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  animation: 2s boll infinite;
+}
+
+html:hover .two {
+  animation-duration: 4s;
+}
+
+@keyframes boll {
+  0% {
+    transform: none;
+    animation-timing-function: cublic-bezier(.78,.01,.83,.67);
+    box-shadow: none;
+  }
+
+  25%, 45% {
+    width: 90px;
+    height: 110px;
+    box-shadow: 0 -5px 3px red, 0 -6px 6px red;
+  }
+
+  50% {
+    width: 90px;
+    height: 110px;
+    transform: translateY(350px);
+    filter: blur(2px);
+    box-shadow: none;
+  }
+
+  55% {
+    transform: translateY(360px);
+    width: 110px;
+    height: 90px;
+    box-shadow: -5px 4px 5px red, 5px 0px 3px red;
+  }
+  
+  75% {
+    width: 90px;
+    height: 110px;
+    box-shadow: 4px 10px 3px red, 4px 6px 6px red;
+  }
+  
+  100% {
+    transform: none;
+    animation-timing-function: ease-in;
+    box-shadow: none;
+  }
+}
