@@ -12,3 +12,25 @@ body {
     background: $light;
 }
 
+.top {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin-top: -40px;
+}
+
+.ghost {
+    width: 50%;
+    height: 53%;
+    left: 25%;
+    top: 20%;
+    position: absolute;
+    border-radius: 50% 50% 0 0;
+
+}
