@@ -14,3 +14,5 @@
 ● 5: 
 <a href="https://gyazo.com/15363660497624c35f4883da29694cf8"> first vue.js</a>
 
+● 6: エラー修復中
+use Vue-router
