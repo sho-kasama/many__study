@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACF,WAAW,CAAA,KAAC;EACZ,OAAO,CAAA,OAAC;CACX",
+    "sources": [
+        "querty.scss"
+    ],
+    "names": [],
+    "file": "querty.css"
+}
