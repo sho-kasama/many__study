@@ -1,5 +1,15 @@
 <template>
   <div>
-    <p>サンプル</p>
+    <p>{{msg}}</p>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      msg: "Hello world"
+    };
+  }
+};
+</script>
