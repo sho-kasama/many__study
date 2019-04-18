@@ -2,3 +2,10 @@
     --grid-size: 10vw;
     --color: purple;
 }
+
+p {
+    display: grid;
+    grid-template-columns: repeat(7, var(--grid-size));
+    grid-template-rows: var(--grid-size);
+    grid-gap: calc(var(--grid-size) / 10);
+}

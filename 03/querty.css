@@ -2,4 +2,14 @@
   --grid-size: 10vw;
   --color: purple;
 }
+
+p {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (var(--grid-size))[7];
+      grid-template-columns: repeat(7, var(--grid-size));
+  -ms-grid-rows: var(--grid-size);
+      grid-template-rows: var(--grid-size);
+  grid-gap: calc(var(--grid-size) / 10);
+}
 /*# sourceMappingURL=querty.css.map */
