@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Lora");
+html {
+  display: -ms-grid;
+  display: grid;
+  min-height: 100%;
+}
+
+body {
+  background: #252C32;
+  display: -ms-grid;
+  display: grid;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 500px;
+  height: 700px;
+}
+
+.bar {
+  position: absolute;
+  height: 85%;
+  width: 2px;
+  left: 7%;
+  top: 7.5%;
+  background: #F4E8DA;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-radius: 50%;
+  left: -5px;
+  border: 1px solid #F4E8DA;
+  -webkit-box-shadow: 0px 0px 7px #f4e8da;
+          box-shadow: 0px 0px 7px #f4e8da;
+}
+
+.top {
+  background: #5B4644;
+  top: -1%;
+}
+
+.middle {
+  background: #87624F;
+  top: 38%;
+}
+
+.bottom {
+  background: #DAB7A3;
+  bottom: -1%;
+}
+
+.bold {
+  color: #87624F;
+  position: absolute;
+  top: -7%;
+  left: -17px;
+}
+
+.creamy {
+  color: #DAB7A3;
+  position: absolute;
+  bottom: -7%;
+  left: -27px;
+}
+
+.coffee-cups {
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  left: 10%;
+  top: 3%;
+}
+
+.handle {
+  position: absolute;
+  height: 20px;
+  width: 15px;
+  background: transparent;
+  border-radius: 50% 30%;
+  left: 95%;
+  top: 10%;
+  z-index: -1;
+  border: 2px solid #F4E8DA;
+}
+
+.cup {
+  position: absolute;
+  width: 70px;
+  height: 55px;
+  background: #252C32;
+  border: 2px solid #F4E8DA;
+  border-radius: 0 0 5rem 5rem;
+  left: 20%;
+}
+
+.cup-small {
+  position: absolute;
+  width: 55px;
+  height: 40px;
+  background: #252C32;
+  border: 2px solid #F4E8DA;
+  border-radius: 0 0 5rem 5rem;
+  left: 23%;
+}
+
+.cup-long {
+  position: absolute;
+  width: 60px;
+  height: 70px;
+  background: #252C32;
+  border: 2px solid #F4E8DA;
+  border-radius: 10% 10% 50% 50%;
+  left: 22%;
+}
+
+.doppio {
+  top: 7%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #252C32), color-stop(40%, #5B4644), color-stop(70%, #87624F));
+  background: linear-gradient(to bottom, #252C32 40%, #5B4644 40%, #87624F 70%);
+}
+
+.americano {
+  top: 20.5%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(13%, #252C32), color-stop(13%, #859FB5), color-stop(50%, #859FB5), color-stop(50%, #87624F));
+  background: linear-gradient(to bottom, #252C32 13%, #859FB5 13%, #859FB5 50%, #87624F 50%);
+}
+
+.macchiato {
+  top: 37%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #252C32), color-stop(20%, #F4E8DA), color-stop(40%, #F4E8DA), color-stop(40%, #87624F));
+  background: linear-gradient(to bottom, #252C32 20%, #F4E8DA 20%, #F4E8DA 40%, #87624F 40%);
+}
+
+.flatwhite {
+  top: 52%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #252C32), color-stop(10%, #F4E8DA), color-stop(60%, #DAB7A3), color-stop(65%, #87624F), color-stop(90%, #5B4644));
+  background: linear-gradient(to bottom, #252C32 10%, #F4E8DA 10%, #DAB7A3 60%, #87624F 65%, #5B4644 90%);
+}
+
+.cappuccino {
+  top: 66%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #F4E8DA), color-stop(50%, #DAB7A3), color-stop(55%, #DAB7A3), color-stop(60%, #87624F));
+  background: linear-gradient(to bottom, #F4E8DA 50%, #DAB7A3 50%, #DAB7A3 55%, #87624F 60%);
+}
+
+.latte {
+  top: 83%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #252C32), color-stop(5%, #F4E8DA), color-stop(30%, #F4E8DA), color-stop(30%, #DAB7A3), color-stop(70%, #DAB7A3), color-stop(70%, #87624F));
+  background: linear-gradient(to bottom, #252C32 5%, #F4E8DA 5%, #F4E8DA 30%, #DAB7A3 30%, #DAB7A3 70%, #87624F 70%);
+}
+
+h1 {
+  color: #F4E8DA;
+  font-size: 1em;
+  letter-spacing: 3px;
+}
+
+p {
+  color: #F4E8DA;
+  font-family: "Lora", serif;
+  text-transform: none;
+  font-size: 0.7em;
+  letter-spacing: 0.5px;
+  margin-top: 3px;
+}
+
+.info {
+  width: 55%;
+  height: 100%;
+  position: absolute;
+  left: 43%;
+}
+
+.first, .second, .third, .fourth, .fifth, .sixth {
+  position: absolute;
+}
+
+.first {
+  top: 9%;
+}
+
+.second {
+  top: 23%;
+}
+
+.third {
+  top: 38%;
+}
+
+.fourth {
+  top: 54%;
+}
+
+.fifth {
+  top: 67%;
+}
+
+.sixth {
+  top: 85%;
+}
+
+.small {
+  margin-left: 20px;
+  margin-top: -1px;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.key {
+  position: relative;
+  margin: auto;
+  width: 500px;
+  height: 200px;
+}
+
+.espresso {
+  background: #5B4644;
+  position: absolute;
+  left: 17%;
+}
+
+.milk {
+  background: #DAB7A3;
+  position: absolute;
+  left: 40%;
+}
+
+.foam {
+  background: #F4E8DA;
+  position: absolute;
+  left: 63%;
+}
+
+.water {
+  background: #859FB5;
+  position: absolute;
+  left: 83%;
+}
+/*# sourceMappingURL=Coffee.css.map */
