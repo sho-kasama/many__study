@@ -85,16 +85,9 @@ h3 {
     left: -27px;
 }
 
-.info {
-    width: 55%;
-    height: 100%;
-    position: absolute;
-    left: 43%;
-}
-
 //coffee cup drawings
 
-coffee-cups {
+.coffee-cups {
     width: 40%;
     height: 100%;
     position: absolute;
@@ -146,7 +139,6 @@ coffee-cups {
 
 .doppio {
     top: 7%;
-    left: 21%;
     background: linear-gradient(to bottom, $dark 40%, $brown 40%, $coffee 70%);
 }
 
@@ -157,26 +149,114 @@ coffee-cups {
 
 .macchiato {
     top: 37%;
-    left: 21%;
     background: linear-gradient(to bottom, $dark 20%, $white 20%, $white 40%, $coffee 40%);
 }
 
 .flatwhite {
     top: 52%;
-    left: 21.5%;
     background: linear-gradient(to bottom, $dark 10%, $white 10%, $tan 60%, $coffee 65%, $brown 90%);
 }
   
 .cappuccino {
     top: 66%;
-    left: 21%;
     background: linear-gradient(to bottom, $white 50%, $tan 50%, $tan 55%, $coffee 60%);
 }
 
 .latte {
     top: 83%;
-    left: 21%;
     background: linear-gradient(to bottom, $dark 5%, $white 5%, $white 30%, $tan 30%, $tan 70%, $coffee 70%);
 }
 
 // description
+
+h1 {
+    color: $white;
+    font-size: 1em;
+    letter-spacing: 3px;
+}
+
+p {
+    color: $white;
+    font-family: $serif;
+    text-transform: none;
+    font-size: 0.7em;
+    letter-spacing: 0.5px;
+    margin-top: 3px;
+}
+
+
+.info {
+    width: 55%;
+    height: 100%;
+    position: absolute;
+    left: 43%;
+  }
+  
+.first, .second, .third, .fourth, .fifth, .sixth {
+    position: absolute;
+  }
+  
+  .first {
+    top: 9%;
+  }
+  
+  .second {
+    top: 23%;
+  }
+  
+  .third {
+    top: 38%;
+  }
+  
+  .fourth {
+    top: 54%;
+  }
+  
+  .fifth {
+    top: 67%;
+  }
+  
+  .sixth {
+    top: 85%;
+  }
+  
+// key for the colors
+.small {
+    margin-left: 20px;
+    margin-top: -1px;
+    font-family: $sans;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .key {
+    position: relative;
+    margin: auto;
+    width: 500px;
+    height: 200px;
+  }
+  
+  .espresso {
+    background: $brown;
+    position: absolute;
+    left: 17%;
+  }
+  
+  .milk {
+    background: $tan;
+    position: absolute;
+    left: 40%;
+  }
+  
+  .foam {
+    background: $white;
+    position: absolute;
+    left: 63%;
+  }
+  
+  .water {
+    background: $water;
+    position: absolute;
+    left: 83%;
+  }
+  
