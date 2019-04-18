@@ -1,29 +1,17 @@
-# five-app
+# 初めてVue.jsを触りました
 
-## Project setup
-```
-yarn install
-```
+## 知見
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+大枠の動きは index.html ↪︎ buid ↪︎ ./dist/index.html
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+基本的にはこの3ファイルで構成されている
 
-### Run your tests
-```
-yarn run test
-```
+● index.html ...HTMLの親玉の部分、headの色々かじる以外は特に修正の必要なし
+● src/main.js ...しばらく変更の必要なさそう
+● src/App.vue ...主に変更するファイル？
 
-### Lints and fixes files
-```
-yarn run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+データバインディングやコンポーネント化,Fetchを使ったAjax処理を行いました。
+
+
+
