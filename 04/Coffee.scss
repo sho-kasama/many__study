@@ -9,3 +9,85 @@ $water: #859FB5;
 
 $sans: 'Lato', sans-serif;
 $serif: 'Lora', serif;
+
+html {
+    display: grid;
+    min-height: 100%;
+}
+
+body {
+    background: $dark;
+    display: grid;
+    font-family: $sans;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+
+.container {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 500px;
+    height: 700px;
+}
+
+.bar {
+    position: absolute;
+    height: 85%;
+    width: 2px;
+    left: 7%;
+    top: 7.5%;
+    background: $white;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    left: -5px;
+    border: 1px solid $white;
+    box-shadow: 0px 0px 7px rgba($white, 100%);
+}
+
+.top {
+    background: $brown;
+    top: -1%;
+}
+
+.middle {
+    background: $coffee;
+    top: 38%;
+}
+
+.bottom {
+    background: $tan;
+    bottom: -1%;
+}
+
+.bold {
+    color: $coffee;
+    position: absolute;
+    top: -7%;
+    left: -17px;
+}
+
+.creamy {
+    color: $tan;
+    position: absolute;
+    bottom: -7%;
+    left: -27px;
+}
+
+.info {
+    width: 55%;
+    height: 100%;
+    position: absolute;
+    left: 43%;
+}
