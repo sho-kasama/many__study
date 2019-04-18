@@ -91,3 +91,92 @@ h3 {
     position: absolute;
     left: 43%;
 }
+
+//coffee cup drawings
+
+coffee-cups {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    left: 10%;
+    top: 3%;
+}
+
+.handle {
+    position: absolute;
+    height: 20px;
+    width: 15px;
+    background: transparent;
+    border-radius: 50% 30%;
+    left: 95%;
+    top: 10%;
+    z-index: -1;
+    border: 2px solid $white;
+}
+
+.cup {
+    position: absolute;
+    width: 70px;
+    height: 55px;
+    background: $dark;
+    border: 2px solid $white;
+    border-radius: 0 0 5rem 5rem;
+    left: 20%;
+}
+
+.cup-small {
+    position: absolute;
+    width: 55px;
+    height: 40px;
+    background: $dark;
+    border: 2px solid $white;
+    border-radius: 0 0 5rem 5rem;
+    left: 23%;
+}
+
+.cup-long {
+    position: absolute;
+    width: 60px;
+    height: 70px;
+    background: $dark;
+    border: 2px solid $white;
+    border-radius: 10% 10% 50% 50%;
+    left: 22%;
+}
+
+.doppio {
+    top: 7%;
+    left: 21%;
+    background: linear-gradient(to bottom, $dark 40%, $brown 40%, $coffee 70%);
+}
+
+.americano {
+    top: 20.5%;
+    background: linear-gradient(to bottom, $dark 13%, $water 13%, $water 50%, $coffee 50%);
+}
+
+.macchiato {
+    top: 37%;
+    left: 21%;
+    background: linear-gradient(to bottom, $dark 20%, $white 20%, $white 40%, $coffee 40%);
+}
+
+.flatwhite {
+    top: 52%;
+    left: 21.5%;
+    background: linear-gradient(to bottom, $dark 10%, $white 10%, $tan 60%, $coffee 65%, $brown 90%);
+}
+  
+.cappuccino {
+    top: 66%;
+    left: 21%;
+    background: linear-gradient(to bottom, $white 50%, $tan 50%, $tan 55%, $coffee 60%);
+}
+
+.latte {
+    top: 83%;
+    left: 21%;
+    background: linear-gradient(to bottom, $dark 5%, $white 5%, $white 30%, $tan 30%, $tan 70%, $coffee 70%);
+}
+
+// description
