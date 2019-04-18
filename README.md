@@ -10,3 +10,6 @@
 
 ● 4:
 <a href="https://gyazo.com/f891abfe66f2bb41d6151a9272f8745d">Coffee page</a>
+
+● 5:
+Loading animation
