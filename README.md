@@ -17,4 +17,5 @@
 ● 6: エラー修復中
 use Vue-router
 
-● 7: scaffoldで遊んでみる
+● 7: 
+<a href="https://github.com/sho-kasama/toy_app">scaffoldで遊んでみる</a>
