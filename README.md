@@ -21,7 +21,7 @@ use Vue-router
 <a href="https://github.com/sho-kasama/toy_app">scaffoldで遊んでみる</a>
 
 ● 8: 
-LINE botで遊んでみる ( herokuのデプロイでエラーが発生する )
+<a href="https://i.gyazo.com/b8688682db707c7f13518b71b6ec542f.gif"> 天気予報のLINE BOT を作った</a>
 
 ● 9: 
 <a href="https://i.gyazo.com/951a1863aa20d038d99c2657f9849a27.gif">UI Patterns ( Toggles design )</a>
