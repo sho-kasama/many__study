@@ -39,6 +39,42 @@ vue.jsでターミナルを表示させる　https://codepen.io/Titulum/pen/wERB
 
 ● 1:
 <a href="https://qiita.com/maru__maru/items/23d6e1b94bd5344548f1">alias 設定まとめ(bash ) </a>
+
+
 ● 2:
 <a href="https://qiita.com/maru__maru/items/eb0152ef09128a5e9fcb">[随時更新] 3分間 ネットワーク基礎講座 用語集</a>
+
+
+● 3:
+herokuコマンドについて,
+
+● 4:
+tmuxについて
+
+
+
+● 5:
+zshについて
+
+● 6:
+zshのalias設定
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
