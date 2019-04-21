@@ -46,7 +46,11 @@ vue.jsでターミナルを表示させる　https://codepen.io/Titulum/pen/wERB
 
 
 ● 3:
-herokuコマンドについて,
+<a href="https://qiita.com/maru__maru/items/05497d5540a758639fd4">[随時更新予定]コマンドまとめ</a>
+↑ git,heroku,rails,tmux,zsh,bash,vue.js,についてのコマンドの総集編を作ります
+
+
+
 
 ● 4:
 tmuxについて
