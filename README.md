@@ -27,7 +27,7 @@ use Vue-router
 <a href="https://i.gyazo.com/951a1863aa20d038d99c2657f9849a27.gif">UI Patterns ( Toggles design )</a>
 
 ● 10: 
-vue.jsでターミナルを表示させる　https://codepen.io/Titulum/pen/wERBza?editors=1010
+scaffold カスタマイズ 画像アップロードを実装する
 
 
 
