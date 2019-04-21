@@ -52,20 +52,6 @@ vue.jsでターミナルを表示させる　https://codepen.io/Titulum/pen/wERB
 
 
 
-● 4:
-tmuxについて
-
-
-
-● 5:
-zshについて
-
-● 6:
-zshのalias設定
-
-
-
-
 
 
 
