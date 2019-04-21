@@ -27,7 +27,8 @@ use Vue-router
 <a href="https://i.gyazo.com/951a1863aa20d038d99c2657f9849a27.gif">UI Patterns ( Toggles design )</a>
 
 ● 10: 
-scaffold 画像アップロード機能を実装する
+<a href="<a href="https://gyazo.com/71d9e0cacfac789ac96b1dba18600340">scaffold 画像アップロード機能を実装した（まだまだ改善点たくさんある)</a>
+<a href="https://github.com/sho-kasama/toy_app/issues/7">関連issue</a>
 
 
 
