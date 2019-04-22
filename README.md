@@ -30,8 +30,7 @@ use Vue-router
 <a href="https://gyazo.com/71d9e0cacfac789ac96b1dba18600340">scaffold 画像アップロード機能を実装した（まだまだ改善点たくさんある)</a>
 <a href="https://github.com/sho-kasama/toy_app/issues/7">関連issue</a>
 
-● 11:
-Sinatra 使う
+
 
 
 
