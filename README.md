@@ -31,7 +31,7 @@ use Vue-router
 <a href="https://github.com/sho-kasama/toy_app/issues/7">関連issue</a>
 
 ● 11:
-Vue.jsでサイトを作る
+Sinatra 使う
 
 
 
