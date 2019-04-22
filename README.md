@@ -31,10 +31,8 @@ use Vue-router
 <a href="https://github.com/sho-kasama/toy_app/issues/7">関連issue</a>
 
 ● 11:
-Firebaseを使ってサイトを公開する
+Vue.jsでサイトを作る
 
-
-● 12: 
 
 
 
