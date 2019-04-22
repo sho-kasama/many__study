@@ -58,6 +58,8 @@ JavaScriptのコースを徹底的にやる
 <a href="https://qiita.com/maru__maru/items/05497d5540a758639fd4">[随時更新予定]コマンドまとめ</a>
 ↑ git,heroku,rails,tmux,zsh,bash,vue.js,についてのコマンドの総集編を作ります
 
+● 4: 
+<a href="https://qiita.com/maru__maru/items/39ede81964df58ac5143">[随時更新]var/const/letの違いについて</a>
 
 
 
