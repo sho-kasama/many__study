@@ -35,7 +35,7 @@ Firebaseを使ってサイトを公開する
 
 
 ● 12: 
-Githubリポジトリの訪問数をkintoneに記録する
+
 
 
 
