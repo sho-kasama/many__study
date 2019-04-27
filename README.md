@@ -34,9 +34,7 @@ use Vue-router
 <a href="https://github.com/sho-kasama/many__study/issues/31">ドロップダウンメニュー</a>
 
 ● 12:
-<a href="">ツールチップ≤/a>
-
-
+<a href="https://gyazo.com/ac61e624192e8860b9a04440b69671ba">css ツールチップ</a>
 
 
 
