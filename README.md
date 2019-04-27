@@ -33,7 +33,8 @@ use Vue-router
 ● 11:
 <a href="https://github.com/sho-kasama/many__study/issues/31">ドロップダウンメニュー</a>
 
-
+● 12:
+<a href="">ツールチップ≤/a>
 
 
 
