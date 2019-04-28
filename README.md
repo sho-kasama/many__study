@@ -37,6 +37,8 @@ use Vue-router
 <a href="https://gyazo.com/ac61e624192e8860b9a04440b69671ba">css ツールチップ</a>
 
 
+● 13:
+Tippy.jsを使ってみる
 
 
 
