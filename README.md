@@ -40,7 +40,8 @@ use Vue-router
 ● 13:
 Tippy.jsを使ってみる
 
-
+● 14: 
+Twitter botを作る
 
 
 # 自分が書いたQiita(忘備録として記録しています)
