@@ -1,0 +1,87 @@
+.circle {
+    /* 円形プログレスバーを左上に固定した */
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: #F0DDE1;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* 円形の左部分 */
+.circle::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -60px;
+    width: 120px;
+    height: 120px;
+    background: #F0DDE1;
+    transform-origin: right 60px;
+    z-index: 2;
+    animation: rotate-circle-left 4s linear forwards;
+}
+
+/* 円形の右部分 */
+
+.circle::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 60px;
+    width: 120px;
+    height: 120px;
+    background: #F0DDE1;
+    transform-origin: left 60px;
+    z-index: 3;
+    animation: rotate-circle-right 4s linear forwards;
+}
+
+.circle .circle-inner {
+    /* circle クラスの左上を基準にしてる */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: 62px;
+    padding-top: 38px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 4;
+}
+
+
+@keyframes rotate-circle-right {
+    0%   {
+        transform: rotate(0deg);
+        background: #E9ADCA;
+    }
+
+    
+    50%  {
+        transform: rotate(180deg);
+        background: #E9ADCA;
+    }
+
+    
+    50.01% {
+        transform: rotate(360deg);
+        background: #F0DDE1;
+    }
+    100% {
+        transform: rotate(360deg);
+        background: #F0DDE1;
+    }
+}
+
+
+
+@keyframes rotate-circle-left {
+    0%   { transform: rotate(0deg); }
+    50%  { transform: rotate(0deg); }
+    100% { transform: rotate(180deg); }
+}
