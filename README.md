@@ -14,8 +14,7 @@
 ● 5: 
 <a href="https://gyazo.com/15363660497624c35f4883da29694cf8"> first vue.js</a>
 
-● 6: エラー修復中
-use Vue-router
+● 6: エラー修復中(vue)
 
 ● 7: 
 <a href="https://github.com/sho-kasama/toy_app">scaffoldで遊んでみる</a>
@@ -50,6 +49,8 @@ Twitter botを作る
 ● 16:
 Instagram簡易アプリを作る
 
+● 17:
+近くの温泉を探してくれるLine botを作る
 
 
 # 自分が書いたQiita(忘備録として記録しています)
