@@ -1,0 +1,59 @@
+.box {
+    height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    -webkit-backgruond-size: cover;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.box1 {
+    background-color: #888;
+    z-index: 100;
+    background-image: url(https://i.gzn.jp/img/2018/11/13/detective-pikachu-reaction/00.jpg);
+}
+
+.box2 {
+    background-color: #777;
+    z-index: 200;
+    background-image: url(https://dnaimg.com/2018/11/14/pokmon-detective-pikachu-official-trailer-wwi/title.jpg);
+}
+
+.box3 {
+    z-index: 300;
+}
+
+.box4 {
+    z-index: 400;
+}
+
+
+.image3 {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-image: url(https://www.famitsu.com/images/000/172/569/l_5c7671a9cff03.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.image4 {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqBTSv1mxiL4bL2x_jtSaM0kyyTBBKVfJM66QaClfdcMidgByobA);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
