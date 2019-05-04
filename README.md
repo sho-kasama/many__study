@@ -53,7 +53,9 @@ Instagram簡易アプリを作る
 近くの温泉を探してくれるLine botを作る
 
 ● 18:
-<a href="https://gyazo.com/0a8b08966000851cb51862dc191257b4"><img src="https://i.gyazo.com/0a8b08966000851cb51862dc191257b4.gif" alt="Image from Gyazo" width="960"/></a>
+<a href="https://gyazo.com/0a8b08966000851cb51862dc191257b4">
+[18] 画面にピタッとついてくるやつを作成した
+</a>
 
 
 # 自分が書いたQiita(忘備録として記録しています)
