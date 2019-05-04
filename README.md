@@ -34,6 +34,7 @@
 
 ● 12:
 <a href="https://gyazo.com/ac61e624192e8860b9a04440b69671ba">css ツールチップ</a>
+<a href="https://github.com/sho-kasama/many__study/issues/42">issue</a>
 
 
 ● 13:
