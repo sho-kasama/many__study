@@ -1,0 +1,46 @@
+header {
+    background-color: #eee;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+  }
+  
+  .title {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  
+  .title_color_blue {
+    background-color: blue;
+  }
+  
+  .title_color_green {
+    background-color: green;
+  }
+  
+  .title_color_red {
+    background-color: red;
+  }
+  
+  .item {
+    background-color: #ddd;
+    border-bottom: 1px solid #eee;
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+  
+  }
+  
+  footer {
+    background-color: #222;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    padding: 30px;
+    text-align: center;
+  }
+  
