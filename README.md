@@ -57,6 +57,10 @@ Instagram簡易アプリを作る
 <a href="https://gyazo.com/0a8b08966000851cb51862dc191257b4">position: stickyを使った </a>
 <a href="https://github.com/sho-kasama/many__study/issues/42">issue</a>
 
+● 19:
+<a href=""> UI Direct Messaging</a>
+
+
 
 # 自分が書いたQiita(忘備録として記録しています)
 
