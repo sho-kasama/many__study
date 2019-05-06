@@ -58,7 +58,7 @@ Instagram簡易アプリを作る
 <a href="https://github.com/sho-kasama/many__study/issues/42">issue</a>
 
 ● 19:
-<a href=""> UI Direct Messaging</a>
+<a href="https://github.com/sho-kasama/many__study/issues/44"> UI Direct Messaging</a>
 
 
 
