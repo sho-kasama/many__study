@@ -64,7 +64,7 @@ Instagram簡易アプリを作る
 LP作成~
 
 ● 21:
-api使ってみるよ〜
+<a href="https://github.com/sho-kasama/api_practice">apiモードでRailsアプリを作成してpostmanを使用して動作確認を行いました</a>
 
 
 
