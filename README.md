@@ -60,6 +60,10 @@ Instagram簡易アプリを作る
 ● 19:
 <a href="https://github.com/sho-kasama/many__study/issues/44"> UI Direct Messaging</a>
 
+● 20: 
+LP作成~
+
+
 
 
 # 自分が書いたQiita(忘備録として記録しています)
