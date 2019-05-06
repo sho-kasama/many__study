@@ -34,6 +34,7 @@
 
 ● 12:
 <a href="https://gyazo.com/ac61e624192e8860b9a04440b69671ba">css ツールチップ</a>
+<a href="https://github.com/sho-kasama/many__study/issues/42">issue</a>
 
 
 ● 13:
@@ -53,7 +54,12 @@ Instagram簡易アプリを作る
 近くの温泉を探してくれるLine botを作る
 
 ● 18:
-<a href="https://gyazo.com/0a8b08966000851cb51862dc191257b4"><img src="https://i.gyazo.com/0a8b08966000851cb51862dc191257b4.gif" alt="Image from Gyazo" width="960"/></a>
+<a href="https://gyazo.com/0a8b08966000851cb51862dc191257b4">position: stickyを使った </a>
+<a href="https://github.com/sho-kasama/many__study/issues/42">issue</a>
+
+● 19:
+<a href=""> UI Direct Messaging</a>
+
 
 
 # 自分が書いたQiita(忘備録として記録しています)
