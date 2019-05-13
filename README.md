@@ -66,6 +66,13 @@ LP作成~
 ● 21:
 <a href="https://github.com/sho-kasama/api_practice">apiモードでRailsアプリを作成してpostmanを使用して動作確認を行いました</a>
 
+● 22:
+<a href="https://github.com/sho-kasama/Todo-rails">Todoアプリ</a>
+
+
+
+
+
 
 
 # 自分が書いたQiita(忘備録として記録しています)
