@@ -69,6 +69,9 @@ LP作成~
 ● 22:
 <a href="https://github.com/sho-kasama/Todo-rails">Todoアプリ</a>
 
+● 23: 
+<a href="">jQueryを使った何かを作成する</a>
+
 
 
 
