@@ -100,9 +100,11 @@ LP作成~
 
 #### 掴めたかも
 
-instagramの簡易版
-tinderの簡易番
-todoアプリ
+instagramの簡易版<br>
+tinderの簡易番<br>
+todoアプリ<br>
+
+それぞれカスタマイズしてみて、自分の大きなポートフォリオを作ってみる
 
 
 
