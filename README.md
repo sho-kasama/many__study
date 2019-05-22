@@ -72,6 +72,8 @@ LP作成~
 ● 23: 
 <a href="">jQueryを使った何かを作成する</a>
 
+● 24:
+<a href="https://github.com/sho-kasama/Todo-rails/pull/25/files">Nokogiriでスクレイピングしてみた</a>
 
 
 
