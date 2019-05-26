@@ -75,6 +75,8 @@ LP作成~
 ● 24:
 <a href="https://github.com/sho-kasama/Todo-rails/pull/25/files">Nokogiriでスクレイピングしてみた</a>
 
+● 25:
+<a href="https://github.com/sho-kasama/Ajax_/blob/master/README.md">Ajaxを勉強した</a>
 
 
 
