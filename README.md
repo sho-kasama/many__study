@@ -35,6 +35,13 @@
 <a href="https://github.com/sho-kasama/many__study/issues/42">issue</a>
 
 
+● 9:
+<a href="https://qiita.com/mikan3rd/items/20152cdd63a708264a9e">ReactでTodoアプリ作成</a>
+
+
+
+
+
 ### バックエンド系
 
 
@@ -88,6 +95,10 @@
 
 ● 4: 
 <a href="https://qiita.com/maru__maru/items/39ede81964df58ac5143">[随時更新]var/const/letの違いについて</a>
+
+
+
+
 
 
 #### 掴めたかも
