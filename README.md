@@ -36,7 +36,7 @@
 
 
 ● 9:
-<a href="https://qiita.com/mikan3rd/items/20152cdd63a708264a9e">ReactでTodoアプリ作成</a>
+<a href="https://github.com/sho-kasama/react-todo/tree/master/todo">ReactでTodoアプリ作成</a>
 
 
 
