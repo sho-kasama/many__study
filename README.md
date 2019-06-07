@@ -58,7 +58,7 @@
 
 
 ● 4:
-<a href="https://github.com/sho-kasama/api_practice">apiモードでRailsアプリを作成してpostmanを使用して動作確認を行いました</a>
+<a href="https://github.com/sho-kasama/api-practice">apiモードでRailsアプリを作成してpostmanを使用して動作確認を行いました</a>
 
 
 ● 5:
