@@ -36,7 +36,7 @@
 
 
 ● 9:
-<a href="https://github.com/sho-kasama/react-todo/tree/master/todo">ReactでTodoアプリ作成</a>
+<a href="https://github.com/sho-kasama/react-todo/blob/master/README.md">ReactでTodoアプリ作成</a>
 
 
 
