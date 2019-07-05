@@ -40,7 +40,7 @@
 <a href="https://github.com/sho-kasama/react-todo/blob/master/README.md">ReactでTodoアプリ作成</a>
 
 ● 10:
-<a href="https://jsfiddle.net/sho_kasama/knt7exmf/">Vue.jsを使ってclickのカウントと座標の位置を確認できるようにした</a>
+<a href="https://jsfiddle.net/sho_kasama/knt7exmf/">Vue.jsのイベントハンドリングを勉強した。(</a>
 
 
 
