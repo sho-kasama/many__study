@@ -108,25 +108,9 @@
 
 
 
-#### 掴めたかも
+#### 作成予定
 
-instagramの簡易版<br>
-tinderの簡易番<br>
-todoアプリ<br>
-
-それぞれカスタマイズしてみて、自分の大きなポートフォリオを作ってみる
-
-
-
-
-
-
-
-
-
-
-
-
+- [ ] <a href="https://medium.com/coding-artist/vue-js-pokemon-battle-tutorial-380cd72eb681">Vueでポケモン作る</a>
 
 
 
