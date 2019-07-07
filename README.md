@@ -46,6 +46,8 @@
 ● 11:
 <a href="https://jsfiddle.net/sho_kasama/9pysfg0n/">クリックカウンターを作成した</a>
 
+●　12:
+<a href="https://github.com/sho-kasama/many__study/tree/master/Vue.tutorial">対戦アプリ</a>
 
 
 
