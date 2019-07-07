@@ -4,29 +4,38 @@ new Vue({
         playerHealth: 100,
         monsterHealth: 130,
         // 実行中のゲームがないので最初はfalseに設定してる
-        gameIsRunning: false
+        gameIsRunning: false,
+        turns: []
     },
     methods: {
-
         startGame: function () {
             this.gameIsRunning = true;
             this.playerHealth = 100;
             this.monsterHealth = 130;
+            this.turns = [];
         },
         attack: function () {
-            this.monsterHealth -= this.calculateDamage(3, 10);
+            var damage = this.calculateDamage(3, 10);
+            this.monsterHealth -= damage;
+            this.turns.unshift({
+                isPlayer: true,
+                text: 'トムはキングスライムに' + damage + `ダメージ`
+            });
             if (this.checkWin()) {
                 return;
             }
-
             this.monsterAttacks();
         },
         specialAttack: function () {
-            this.monsterHealth -= this.calculateDamage(10, 20);
+            var damage = this.calculateDamage(10, 20)
+            this.monsterHealth -= damage;
+            this.turns.unshift({
+                isPlayer: true,
+                text: 'トムはキングスライムにクリティカル' + damage + `ダメージ`
+            });
             if (this.checkWin()) {
                 return;
             }
-
             this.monsterAttacks();
         },
         heal: function () {
@@ -35,14 +44,23 @@ new Vue({
             } else {
                 this.playerHealth = 100;
             }
+            this.turns.unshift({
+                isPlayer: true,
+                text: 'トムは薬草を使った,体力が10回復した'
+            });
             this.monsterAttacks();
         },
         giveUp: function () {
 
         },
         monsterAttacks: function () {
-            this.playerHealth -= this.calculateDamage(5, 12);
+            var damage = this.calculateDamage(5, 12);
+            this.playerHealth -= damage;
             this.checkWin();
+            this.turns.unshift({
+                isPlayer: false,
+                text: 'モンスターはトムに' + damage + 'ダメージ'
+            });
         },
 
         calculateDamage: function (min, max) {
