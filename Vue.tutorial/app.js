@@ -51,6 +51,7 @@ new Vue({
             this.monsterAttacks();
         },
         giveUp: function () {
+            this.palyerHealth == 0;
 
         },
         monsterAttacks: function () {
