@@ -83,29 +83,16 @@
 <a href="https://github.com/sho-kasama/Ajax_/blob/master/README.md">Ajaxを勉強した</a>
 
 
-● 8:
-<a href="">nested_formを使ってみた</a>
+
+● 8: 
+<a href="https://github.com/sho-kasama/Trello_2">Trello APIを使って自分のタスクの情報を引っ張ってきた</a>
+
+
+● 9:
+<a href="https://github.com/sho-kasama/chat_app">チャットアプリを作成した</a>
 
 
 
-# 自分が書いたQiita(忘備録として記録しています)
-
-
-
-● 1:
-<a href="https://qiita.com/maru__maru/items/23d6e1b94bd5344548f1">alias 設定まとめ(bash ) </a>
-
-
-● 2:
-<a href="https://qiita.com/maru__maru/items/eb0152ef09128a5e9fcb">[随時更新] 3分間 ネットワーク基礎講座 用語集</a>
-
-
-● 3:
-<a href="https://qiita.com/maru__maru/items/05497d5540a758639fd4">[随時更新予定]コマンドまとめ</a>
-↑ git,heroku,rails,tmux,zsh,bash,vue.js,についてのコマンドの総集編を作ります
-
-● 4: 
-<a href="https://qiita.com/maru__maru/items/39ede81964df58ac5143">[随時更新]var/const/letの違いについて</a>
 
 
 
