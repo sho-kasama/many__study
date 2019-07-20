@@ -52,6 +52,9 @@
 <a href="https://github.com/sho-kasama/many__study/tree/master/Vue.tutorial">対戦アプリ</a>
 
 
+● 13: 
+<a href="https://github.com/sho-kasama/many__study/tree/master/memo-vue">memo vue</a>
+
 
 ### バックエンド系
 
