@@ -57,6 +57,10 @@
 ● 13: 
 <a href="https://github.com/sho-kasama/many__study/tree/master/memo-vue">memo vue</a>
 
+● 14:
+<a href="https://github.com/sho-kasama/many__study/blob/master/%E2%97%8For%C3%97_game/index.html">●or× game</a>
+
+
 
 ### バックエンド系
 
