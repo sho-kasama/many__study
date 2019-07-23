@@ -1,0 +1,16 @@
+#stage {
+    margin: 50px auto 0;
+    background: #DDD;
+    width: 900px;
+    height: 600px;
+    position: relative;
+}
+
+#stage div {
+    width: 60px;
+    height: 60px;
+    background: #999;
+    position: absolute;
+    top: 0;
+    left: 420px;
+}
