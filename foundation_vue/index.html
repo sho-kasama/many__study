@@ -8,21 +8,19 @@
 <body>
 
   <div id="app">
-    <h1>チュートリアルToDoリスト</h1>
-
-    <!-- ★STEP11 -->
-    <label v-for="label in options" >
+    <h1 class="tutorial">チュートリアルToDoリスト</h1>
+    <label v-for="label in options" > <!-- 各要素の一時的な名前 in 繰り返したいオブジェクト -->
       <input type="radio"
         v-model="current"
         v-bind:value="label.value">{{ label.label }}
     </label>
       
-    <!-- ★STEP12 -->
+    <!-- キャッシュ機能があるおかげで、メソッドと違い何度使用しても処理は 1 度しか行われません -->
     （{{ computedTodos.length }} 件を表示）
 
-    <!-- ★STEP4 リスト用テーブル -->
+    <!-- リスト用テーブル -->
     <table>
-      <thead v-pre>
+      <thead v-pre> <!-- この要素とすべての要素のコンパイルをスキップする。ディレクティブのない大量のノードをスキップすることでコンパイルのスピードをあげる-->
         <tr>
           <th class="id">ID</th>
           <th class="comment">コメント</th>
@@ -31,21 +29,21 @@
         </tr>
       </thead>
       <tbody>
-        <!-- ★STEP5 ToDo の要素をループ -->
+        <!-- ToDo の要素をループ -->
         <tr
           v-for="item in computedTodos"
-          v-bind:key="item.id"
+          v-bind:key="item.id"    
           v-bind:class="{done:item.state}">
           <th>{{ item.id }}</th>
           <td>{{ item.comment }}</td>
           <td class="state">
-            <!-- ★STEP10 状態変更ボタン -->
+            <!-- 状態変更ボタン -->
             <button v-on:click="doChangeState(item)">
               {{ labels[item.state] }}
             </button>
           </td>
           <td class="button">
-            <!-- ★STEP10 削除ボタン -->
+            <!--  削除ボタン -->
             <button v-on:click.ctrl="doRemove(item)">
               削除
             </button>
