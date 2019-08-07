@@ -56,8 +56,6 @@
 ● 14:
 <a href="https://github.com/sho-kasama/many__study/blob/master/%E2%97%8For%C3%97_game/index.html">●or× game</a>
 
-● 15: 
-<a href="https://qiita.com/yuki-n/items/fdc5f7d5ac2f128221d1">Railsでajaxを用いた簡単なインクリメンタルサーチを実装する</a>
 
 ### バックエンド系
 
@@ -122,6 +120,7 @@ Tinder
 
 - [ ] <a href="https://medium.com/coding-artist/vue-js-pokemon-battle-tutorial-380cd72eb681">Vueでポケモン作る</a>
 
+- [ ] <a href="https://qiita.com/yuki-n/items/fdc5f7d5ac2f128221d1">Railsでajaxを用いた簡単なインクリメンタルサーチを実装する</a>
 
 
 
