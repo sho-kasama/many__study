@@ -102,6 +102,11 @@
 ## アプリ系
 
 
+● 1:
+Tinder 
+
+
+<a href="https://gyazo.com/1a5617330f54c2ac0939494523b6bb84">新規登録画面、ログイン画面<img src="https://i.gyazo.com/1a5617330f54c2ac0939494523b6bb84.gif" alt="Image from Gyazo" width="1000"/></a>
 
 <a href="https://gyazo.com/cc199c43b62939c4b3458c9c38a6709c">Tinder スワイプ画面<img src="https://i.gyazo.com/cc199c43b62939c4b3458c9c38a6709c.gif" alt="Image from Gyazo" width="960"/></a>
 
