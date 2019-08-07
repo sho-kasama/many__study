@@ -99,6 +99,12 @@
 
 
 
+## アプリ系
+
+
+
+<a href="https://gyazo.com/cc199c43b62939c4b3458c9c38a6709c">Tinder スワイプ画面<img src="https://i.gyazo.com/cc199c43b62939c4b3458c9c38a6709c.gif" alt="Image from Gyazo" width="960"/></a>
+
 
 
 
