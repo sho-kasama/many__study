@@ -125,5 +125,5 @@ Tinder
 
 - [ ] <a href="https://qiita.com/yuki-n/items/fdc5f7d5ac2f128221d1">Railsでajaxを用いた簡単なインクリメンタルサーチを実装する</a>
 
-
+- [ ] <a href="https://qiita.com/teradonburi/items/412f65147525ff34dbbd">LP制作</a>
 
