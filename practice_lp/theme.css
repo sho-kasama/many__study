@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'goshic';
+    src: url('font/mplusgoshic.ttf') format('truetype')
+}
+
+body {
+    background: black;
+    color: white
+}
+
+p.logo {
+    font-size: 24px;
+    white-space: nowrap
+}
+
+h1 {
+    color: white
+}
+
+p.logo,
+h2 {
+    font-family: 'goshic';
+    color: #808080;
+    background: radial-gradient(#e7e7e7, #808080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+h3 {
+    color: #808080
+}
+
+.name,
+.plan {
+    color: #c54258
+}
+
+ul.menu {
+    color: white
+}
+
+.card {
+    background: white;
+    color: black
+}
+
+div.top:before {
+    content: '';
+    background: url('img/top.png');
+    background-size: cover;
+    background-position: 0 50%;
+    height: 300px;
+    filter: brightness(50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1
+}
+
+a:link,
+a:visited {
+    color: white
+}
+
+a:hover {
+    color: white;
+    padding-bottom: 3px;
+    border-bottom: 2px solid white
+}
+
+.menu-mobile a {
+    border-bottom: 0
+}
+
+ul.menu-mobile li {
+    background: #808080
+}
+
+ul.menu-mobile li :active {
+    background: #b3b3b3
+}
+
+.highlight {
+    background: radial-gradient(#e7e7e7, #808080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+div#example,
+div#price {
+    background: #333;
+    padding-bottom: 20px
+}
+
+.text-border {
+    text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black
+}
+
+tr {
+    border-bottom: solid 1px #808080
+}

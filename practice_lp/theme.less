@@ -1,0 +1,116 @@
+// theme color
+@base-color: black;
+@text-color: white;
+@primary-color: rgb(128, 128, 128);
+@secondary-color: rgb(197, 66, 88);
+// support color
+@highlight-color: rgb(231, 231, 231);
+@border-color: black;
+
+
+body {
+    background: @base-color;
+    color: @text-color;
+}
+
+p.logo {
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+
+h1 {
+    color: @text-color;
+}
+
+p.logo,
+h2 {
+    font-family: 'goshic';
+    color: @primary-color;
+    .highlight;
+}
+
+h3 {
+    color: @primary-color;
+}
+
+.name,
+.plan {
+    color: @secondary-color;
+}
+
+ul.menu {
+    color: @text-color;
+}
+
+.card {
+    background: white;
+    color: black;
+}
+
+/*:beforeに効果を設定する*/
+div.top:before {
+    content: '';
+    background: url('img/top.png');
+    background-size: cover;
+    background-position: 0% 50%;
+    height: 300px;
+    /* 暗めにする */
+    filter: brightness(50%);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    /*重なり順序を一番下にしておく*/
+}
+
+
+
+a:link,
+a:visited {
+    color: @text-color;
+}
+
+a:hover {
+    color: @text-color;
+    padding-bottom: 3px;
+    border-bottom: 2px solid @text-color;
+}
+
+.menu-mobile a {
+    border-bottom: 0;
+}
+
+ul.menu-mobile li {
+    background: @primary-color;
+
+    :active {
+        background: lighten(@primary-color, 20%);
+    }
+}
+
+/* text部分のみにハイライト効果を当てる方法(Chromeのみ) */
+.highlight {
+    background: radial-gradient(@highlight-color, @primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+div#example,
+div#price {
+    background: lighten(@base-color, 20%);
+    padding-bottom: 20px;
+}
+
+.text-border {
+    text-shadow: 1px 1px 0 @border-color,
+        -1px 1px 0 @border-color,
+        1px -1px 0 @border-color,
+        -1px -1px 0 @border-color;
+}
+
+tr {
+    border-bottom: solid 1px @primary-color;
+}

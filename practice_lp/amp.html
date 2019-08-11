@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html amp lang="ja">
+
+<head>
+    <meta charset='utf-8' />
+    <title>CSS Designer 次世代CSSエディター</title>
+    <link rel="canonical" href='https://teradonburi.github.io/landing/index.html'>
+    <meta name='viewport' content='width=device-width,minimum-scale=1,initial-scale=1'>
+    <meta name='description' content='CSS Designerは次世代のCSSエディタです。機械学習により、最適なサジェストと多彩な画像リソースを提供しており、効率的なCSSコーディングができます。'>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "headline": "CSS Designer 機械学習でサジェストしてくれる次世代のCSSエディター",
+            "datePublished": "2018-01-02T12:02:41Z",
+            "image": [
+                "img/logo.png"
+            ]
+        }
+    </script>
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+        
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+        
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+        
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+        
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+        
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+    </style><noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+    <style amp-custom>
+        body {
+            margin: 0;
+            padding: 0
+        }
+        
+        p {
+            margin: 0;
+            padding: 0
+        }
+        
+        h2 {
+            text-align: center
+        }
+        
+        h3 {
+            margin: 0
+        }
+        
+        hr {
+            margin-left: 80px;
+            margin-right: 80px
+        }
+        
+        table {
+            text-align: center;
+            border-collapse: collapse
+        }
+        
+        .menubar {
+            display: flex;
+            justify-content: space-between;
+            height: 20%
+        }
+        
+        .align-center {
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+        
+        .align-vert {
+            display: flex;
+            flex-direction: column
+        }
+        
+        a:link,
+        a:visited {
+            text-decoration: none
+        }
+        
+        .concept {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80%
+        }
+        
+        .top {
+            width: 100%;
+            height: 300px
+        }
+        
+        .service-icon-red {
+            filter: opacity(.5) drop-shadow(0 0 0 red) brightness(200%);
+            margin: 30px
+        }
+        
+        .service-icon-green {
+            filter: opacity(.5) drop-shadow(0 0 0 green) brightness(200%);
+            margin: 30px
+        }
+        
+        .service-icon-blue {
+            filter: opacity(.5) drop-shadow(0 0 0 blue) brightness(200%);
+            margin: 30px
+        }
+        
+        .service-icon {
+            margin: 30px
+        }
+        
+        .card {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 20px;
+            box-shadow: 2px 4px 4px
+        }
+        
+        .virtical-center {
+            display: flex;
+            flex-direction: column;
+            align-items: center
+        }
+        
+        .name,
+        .plan {
+            font-weight: bold;
+            margin-bottom: 10px
+        }
+        
+        .circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%
+        }
+        
+        .footer {
+            background: grey;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center
+        }
+        
+        .footer-items {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 24px;
+            margin-bottom: 24px
+        }
+        
+        .function-img {
+            margin-left: 30px;
+            margin-right: 30px
+        }
+        
+        .sns-icon {
+            margin-left: 12px;
+            margin-right: 12px
+        }
+        
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            width: 70%
+        }
+        
+        ul.menu {
+            margin: 0;
+            padding: 0;
+            display: none;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            font-size: 16px;
+            width: 500px;
+            height: 64px
+        }
+        
+        ul.menu-mobile {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            font-size: 10px;
+            width: 100%
+        }
+        
+        ul.menu-mobile li {
+            width: 100%;
+            text-align: center;
+            border: solid 1px white;
+            background: grey
+        }
+        
+        ul.menu-mobile li :active {
+            background: darkgray
+        }
+        
+        ul.menu-mobile a {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            height: 100%;
+            display: block
+        }
+        
+        .service-desc {
+            display: flex;
+            flex-direction: column;
+            max-width: 75%
+        }
+        
+        .examples {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center
+        }
+        
+        .function-desc {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            max-width: 75%
+        }
+        
+        .function-item {
+            margin-top: 30px
+        }
+        
+        .company-wrap {
+            margin-top: 40px;
+            margin-bottom: 40px
+        }
+        
+        .company-info {
+            margin-top: 20px;
+            margin-left: 0
+        }
+        
+        .company-item {
+            margin-bottom: 20px
+        }
+        
+        .responsive-align {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column
+        }
+        
+        div#service,
+        div#function {
+            padding-bottom: 40px
+        }
+        
+        div#example,
+        div#price {
+            padding-bottom: 20px
+        }
+        
+        @media screen and (min-width:480px) {
+            h1 {
+                font-size: 36px;
+                width: 100%
+            }
+            ul.menu {
+                display: flex
+            }
+            ul.menu-mobile {
+                display: none
+            }
+            .service-desc {
+                text-align: left;
+                max-width: 50%
+            }
+            .examples {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: stretch;
+                padding-left: 40px;
+                padding-right: 40px
+            }
+            .function-desc {
+                margin-top: 0;
+                text-align: left;
+                max-width: 50%
+            }
+            .function-item {
+                margin-top: 30px;
+                align-items: start
+            }
+            div#company {
+                padding-bottom: 40px
+            }
+            .company-info {
+                margin-top: 0;
+                margin-left: 40px
+            }
+            .company-wrap {
+                align-items: start
+            }
+            .responsive-align {
+                flex-direction: row
+            }
+            .reverse {
+                flex-direction: row-reverse
+            }
+        }
+        
+        .bg-A {
+            background: url('img/css_sprites.png') -386px -286px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%
+        }
+        
+        .bg-B {
+            background: url('img/css_sprites.png') -286px -286px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%
+        }
+        
+        .bg-C {
+            background: url('img/css_sprites.png') -286px -386px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%
+        }
+        
+        .bg-ai {
+            width: 256px;
+            height: 256px;
+            background: url('img/css_sprites.png') -10px -10px
+        }
+        
+        .bg-resource {
+            width: 256px;
+            height: 256px;
+            background: url('img/css_sprites.png') -10px -286px
+        }
+        
+        .bg-ci {
+            width: 256px;
+            height: 256px;
+            background: url('img/css_sprites.png') -286px -10px
+        }
+        
+        .bg-free {
+            width: 50px;
+            height: 64px;
+            background: url('img/css_sprites.png') -456px -386px
+        }
+        
+        .bg-business {
+            width: 50px;
+            height: 64px;
+            background: url('img/css_sprites.png') -486px -286px
+        }
+        
+        .bg-premium {
+            width: 50px;
+            height: 64px;
+            background: url('img/css_sprites.png') -386px -386px
+        }
+        
+        .bg-facebook {
+            width: 48px;
+            height: 48px;
+            background: url('img/css_sprites.png') -422px -486px
+        }
+        
+        .bg-instagram {
+            width: 48px;
+            height: 48px;
+            background: url('img/css_sprites.png') -354px -486px
+        }
+        
+        .bg-twitter {
+            width: 48px;
+            height: 48px;
+            background: url('img/css_sprites.png') -286px -486px
+        }
+        
+        @font-face {
+            font-family: 'goshic';
+            src: url('font/mplusgoshic.ttf') format('truetype')
+        }
+        
+        body {
+            background: black;
+            color: white
+        }
+        
+        img.logo {
+            filter: opacity(.5) drop-shadow(0 0 0 white) brightness(200%)
+        }
+        
+        p.logo {
+            font-size: 24px;
+            white-space: nowrap
+        }
+        
+        h1 {
+            color: white
+        }
+        
+        p.logo,
+        h2 {
+            font-family: 'goshic';
+            color: #808080;
+            background: radial-gradient(#e7e7e7, #808080);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent
+        }
+        
+        h3 {
+            color: #808080
+        }
+        
+        .name,
+        .plan {
+            color: #c54258
+        }
+        
+        ul.menu {
+            color: white
+        }
+        
+        .card {
+            background: white;
+            color: black
+        }
+        
+        div.top:before {
+            content: '';
+            background: url('img/top.png');
+            background-size: cover;
+            background-position: 0 50%;
+            height: 300px;
+            filter: brightness(50%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1
+        }
+        
+        a:link,
+        a:visited {
+            color: white
+        }
+        
+        a:hover {
+            color: white;
+            padding-bottom: 3px;
+            border-bottom: 2px solid white
+        }
+        
+        .menu-mobile a {
+            border-bottom: 0
+        }
+        
+        ul.menu-mobile li {
+            background: #808080
+        }
+        
+        ul.menu-mobile li :active {
+            background: #b3b3b3
+        }
+        
+        .highlight {
+            background: radial-gradient(#e7e7e7, #808080);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent
+        }
+        
+        div#example,
+        div#price {
+            background: #333;
+            padding-bottom: 20px
+        }
+        
+        .text-border {
+            text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black
+        }
+        
+        tr {
+            border-bottom: solid 1px #808080
+        }
+    </style>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+</head>
+
+<body>
+    <div class='align-vert'>
+        <div class='top'>
+            <div class='menubar'>
+                <div class='align-center'>
+                    <amp-img src="img/logo.png" alt="サービスロゴ" width='64' height='64'></amp-img>
+                    <p class='logo'>CSS Designer</p>
+                </div>
+                <ul class='menu text-border'>
+                    <li><a href='#service'>サービス概要</a></li>
+                    <li><a href='#example'>導入事例</a></li>
+                    <li><a href='#function'>機能紹介</a></li>
+                    <li><a href='#price'>料金</a></li>
+                    <li><a href='#company'>会社情報</a></li>
+                </ul>
+            </div>
+            <div class='concept text-border'>
+                <h1>デザインコーディングをもっと早く美しく</h1>
+            </div>
+        </div>
+        <div>
+            <ul class='menu-mobile'>
+                <li><a href='#service'>サービス概要</a></li>
+                <li><a href='#example'>導入事例</a></li>
+                <li><a href='#function'>機能紹介</a></li>
+                <li><a href='#price'>料金</a></li>
+                <li><a href='#company'>会社情報</a></li>
+            </ul>
+        </div>
+        <div id='service'>
+            <h2>CSS Designerとは</h2>
+            <hr />
+            <div class='responsive-align'>
+                <amp-img src='img/timeline.svg' width='128' height='128' class='service-icon-red'></amp-img>
+                <div class='service-desc'>
+                    <h3>次世代のCSSエディタ</h3>
+                    <p>CSS DesignerはオンラインのCSSエディタです。AIによる機械学習により、ユーザがよく使うようなデザインパターンを解析し、テンプレート化してくれます。</p>
+                </div>
+            </div>
+            <div class='responsive-align reverse'>
+                <amp-img src='img/widgets.svg' width='128' height='128' class='service-icon-green'></amp-img>
+                <div class='service-desc'>
+                    <h3>動的なリソース生成</h3>
+                    <p>AIの学習により、動的に画像を生成します。また、オンライン上のCSSコーディングの最新傾向を調べ、CSSの最新テンプレートを動的生成します。</p>
+                </div>
+            </div>
+            <div class='responsive-align'>
+                <amp-img src='img/transform.svg' width='128' height='128' class='service-icon-blue'></amp-img>
+                <div class='service-desc'>
+                    <h3>変化に追従する柔軟な修正力</h3>
+                    <p>CSSコードのバージョン管理と最新テンプレートへマイグレーションするときに移行ガイドを生成する機能も内蔵、SEO対策の対策もバッチリ。</p>
+                </div>
+            </div>
+        </div>
+        <div id='example'>
+            <h2>導入事例</h2>
+            <hr />
+            <div class='examples'>
+                <div class='card'>
+                    <div class='virtical-center'>
+                        <div class='bg-A'></div>
+                        <span class='name'>Aさん</span>
+                    </div>
+                    <p>今まで使っていたエディタは利用シーンに合わせた画像やウェブフォントが少なかったのですが、CSS Designerだとこれがほしい！って思った画像やウェブフォントがすぐ見つかって助かっています。乗り換えて良かったです。
+                    </p>
+                </div>
+                <div class='card'>
+                    <div class='virtical-center'>
+                        <div class='bg-B'></div>
+                        <span class='name'>Bさん</span>
+                    </div>
+                    <p>ほかのCSSエディタだとCSSテンプレートが古くて使いづらかったです。CSS Designerだとサポートも充実していて何より、古いテンプレートからのマイグレーションもスムーズでした。最新のCSSコーディングもキャッチアップできて、まさに至れり尽くせり。もう手放せません。
+                    </p>
+                </div>
+                <div class='card'>
+                    <div class='virtical-center'>
+                        <div class='bg-C'></div>
+                        <span class='name'>Cさん</span>
+                    </div>
+                    <p>前に使っていたエディターでは、CSSのコーディングが何度も同じコーディングとなってしまい、効率がよくありませんでした。CSS Designerだと自分のテンプレートも作成できるし、間違ったときやもっと良い書き方を提示してくれてとても重宝してます。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id='function'>
+            <h2>機能紹介</h2>
+            <hr />
+            <div class='responsive-align function-item'>
+                <div class='function-img bg-ai'></div>
+                <div class='function-desc'>
+                    <h3>シンプルでパワフルな機能</h3>
+                    <p>CSS Designerは極めて使いやすく、パワフルなCSSコーディングサポートを提供してくれます。キー入力補完の機能はもちろん、過去の入力頻度に対してテンプレートを自動的に作成してくれます。これにより、コーディング効率を格段に良くすることができます。
+                    </p>
+                </div>
+            </div>
+            <div class='responsive-align function-item'>
+                <div class='function-img bg-resource'></div>
+                <div class='function-desc'>
+                    <h3>多彩な表現力</h3>
+                    <p>色入力の補助はもちろん、多彩なデザインテンプレートとシーン別に多数の画像をご用意しました。利用シーンに合わせたCSSコーディングも一瞬でできます。</p>
+                </div>
+            </div>
+            <div class='responsive-align function-item'>
+                <div class='function-img bg-ci'></div>
+                <div class='function-desc'>
+                    <h3>変化に追従する柔軟な修正力</h3>
+                    <p>最新のCSSコーディングに合わせ、サジェストやテンプレートも常時更新サポートしています。バージョン別に管理されているため、古いバージョンのテンプレートをお使いの方もマイグレーションサポートが充実して安心。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id='price'>
+            <h2>料金</h2>
+            <hr />
+            <div class='responsive-align'>
+                <div class='card'>
+                    <div class='virtical-center'>
+                        <div class='bg-free'></div>
+                        <span class='plan'>Free</span>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>機能名</th>
+                            <th>サポート対象</th>
+                        </tr>
+                        <tr>
+                            <td>xxx機能</td>
+                            <td>○</td>
+                        </tr>
+                        <tr>
+                            <td>yyy機能</td>
+                            <td>○</td>
+                        </tr>
+                        <tr>
+                            <td>zzz機能</td>
+                            <td>○</td>
+                        </tr>
+                        <tr>
+                            <td>vvv機能</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>www機能</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class='card'>
+                    <div class='virtical-center'>
+                        <div class='bg-business'></div>
+                        <span class='plan'>Business</span>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>機能名</th>
+                            <th>サポート対象</th>
+                        </tr>
+                        <tr>
+                            <td>xxx機能</td>
+                            <td>○</td>
+                        </tr>
+                        <tr>
+                            <td>yyy機能</td>
+                            <td>○</td>
+                        </tr>
+                        <tr>
+                            <td>zzz機能</td>
+                            <td>○</td>
+                        </tr>
+                        <tr>
+                            <td>vvv機能</td>
+                            <td>○</td>
+                        </tr>
+                        <tr>
+                            <td>www機能</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class='card'>
+                    <div class='virtical-center'>
+                        <div class='bg-premium'></div>
+                        <span class='plan'>Premium</span>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>機能名</th>
+                            <th>サポート対象</th>
+                        </tr>
+                        <tr>
+                            <td>xxx機能</td>
+                            <td>○</td>
+                        </tr>
+                        <tr>
+                            <td>yyy機能</td>
+                            <td>○</td>
+                        </tr>
+                        <tr>
+                            <td>zzz機能</td>
+                            <td>○</td>
+                        </tr>
+                        <tr>
+                            <td>vvv機能</td>
+                            <td>○</td>
+                        </tr>
+                        <tr>
+                            <td>www機能</td>
+                            <td>○</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id='company'>
+            <h2>会社概要</h2>
+            <hr />
+            <div class='responsive-align company-wrap'>
+                <amp-iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8308288691524!2d139.76485755012288!3d35.68116728009713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1514698136265"
+                    width="300" height="225" frameborder="0" allowfullscreen sandbox='allow-scripts allow-same-origin'>
+                </amp-iframe>
+                <div class='align-vert company-info'>
+                    <div class='company-item'>
+                        <h3>会社名</h3>
+                        <p>株式会社CSS Design</p>
+                    </div>
+                    <div class='company-item'>
+                        <h3>所在地</h3>
+                        <p>〒100-0005</p>
+                        <p>東京都千代田区丸の内１丁目９</p>
+                    </div>
+                    <div class='company-item'>
+                        <h3>お問い合わせ</h3>
+                        <p>hogehoge@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='footer'>
+            <div class='footer-items responsive-align'>
+                <div>利用規約</div>
+                <div>プライバシーポリシー</div>
+                <div>特定商取引について</div>
+            </div>
+            <div class='footer-items'>
+                <div class='bg-twitter sns-icon'></div>
+                <div class='bg-facebook sns-icon'></div>
+                <div class='bg-instagram sns-icon'></div>
+            </div>
+            <div>
+                株式会社CSS Design Inc.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
