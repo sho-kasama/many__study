@@ -14,5 +14,4 @@ npm install -g browser-sync
 browser-sync start --server --files '*'
 `
 
-![md](../img/logo.jpg)
-
+<a href="http://www.awesomescreenshot.com/image/4173829/f0d26c9fd18622a387e7d741c5ffe359">全体の画像はこちら</a>　← awesomescreenshot を使って撮りました。
