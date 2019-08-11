@@ -14,5 +14,5 @@ npm install -g browser-sync
 browser-sync start --server --files '*'
 `
 
-![md](../img/lp.jpg)
+![md](../img/logo.jpg)
 
