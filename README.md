@@ -65,6 +65,9 @@
 ● 17:
 <a href="https://codepen.io/ucoagvvu/pen/oKaEPa">box-shadowとfilter:drop-shadowの違いについて</a> ← 参考記事 ( https://kuzlog.com/2017/03/09/1255/ ) 
 
+● 18:
+<a href="">背景色を斜めにする方法</a>
+
 
 ### バックエンド系
 
