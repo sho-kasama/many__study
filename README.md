@@ -59,6 +59,9 @@
 ● 15:
 <a href="https://github.com/sho-kasama/scoffold_research">インクリメンタルサーチを実装しました</a>
 
+● 16:
+<a href="https://github.com/sho-kasama/many__study/blob/master/practice_lp/README.md">LPを制作しました</a>
+
 
 ### バックエンド系
 
