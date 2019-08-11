@@ -62,6 +62,9 @@
 ● 16:
 <a href="https://github.com/sho-kasama/many__study/blob/master/practice_lp/README.md">LPを制作しました</a>
 
+● 17:
+<a href="https://codepen.io/ucoagvvu/pen/oKaEPa">box-shadowとfilter:drop-shadowの違いについて</a> ← 参考記事 ( https://kuzlog.com/2017/03/09/1255/ ) 
+
 
 ### バックエンド系
 
