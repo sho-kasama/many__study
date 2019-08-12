@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "version": "1.0",
+    "name": "PixelMarket Extention",
+    "description": "PixelMarketの出品ページに、前回入力値の復元機能と商品説明テンプレート機能を追加します。",
+    "icons": {
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "web_accessible_resources": [
+        "*.png"
+    ],
+    "content_scripts": [{
+        "matches": [
+            "https://pixel-market-demo.netlify.com/sell/"
+        ],
+        "js": ["content.js"],
+        "css": ["content.css"]
+    }]
+}

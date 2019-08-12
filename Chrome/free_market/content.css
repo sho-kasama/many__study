@@ -1,0 +1,17 @@
+.pxm-templateUi {
+    display: inline-block;
+    margin: 0 10px 10px;
+}
+
+.pxm-templateUi select {
+    display: inline-block;
+    width: auto;
+    margin-right: 5px;
+}
+
+.pxm-templateButton {
+    appearance: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
