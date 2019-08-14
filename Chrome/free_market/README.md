@@ -148,9 +148,32 @@ manifest.json ↓
 
 
 ```
-// 'chrome.storage.sync'で
+// 'chrome.storage.sync'で値を保存する
+chrome.storage.sync.set({ key: value });
+
+// `chrome.storage.sync`で値を取得してコンソールに表示
+chrome.storage.sync.get([`key`], result => {
+  console.log('Value currently is ` + result.key);
+});
+```
+
+<b>chrome.storage.local</b>
+
+chrome.storage.localを使用して保存したデータは、同期されません。それ以外は、chrome.storageの各種APIをstorage.syncと同様に利用できます。chrome.storage.localでの値の保存と取得は、次のように記述します。
 
 
+```
+// 'chrome.storage.sync'で値を保存する
+chrome.storage.sync.set({ key: value });
 
+// `chrome.storage.sync`で値を取得してコンソールに表示
+chrome.storage.sync.get([`key`], result => {
+  console.log('Value currently is ` + result.key);
+});
+```
+
+
+<br>
+今回作成中のフリマサイトの拡張機能はユーザーがログインしている全てのChromeブラウザでデータを同期させたいため、`storage.sync`を利用することにします。
 
 
