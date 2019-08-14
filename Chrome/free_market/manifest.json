@@ -10,13 +10,13 @@
         "128": "icons/icon128.png"
     },
     "web_accessible_resources": [
-        "*.png"
+        "*.svg"
     ],
     "content_scripts": [{
         "matches": [
             "https://pixel-market-demo.netlify.com/sell/"
         ],
-        "js": ["content.js"],
-        "css": ["content.css"]
+        "css": ["content.css"],
+        "js": ["content.js"]
     }]
 }
