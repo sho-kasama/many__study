@@ -179,9 +179,68 @@ chrome.storage.sync.get([`key`], result => {
 <br>
 <br>
 
-## データの取得、保存、削除のメソッド
+#### データの取得、保存、削除のメソッド
 
 `chrome.storage`でデータの取得、保存、削除を行うには、次のメソッドを利用します。
+
+
+#### get(データの取得)
+
+`chrome.storage.sync.get(key, result => { callback } )`
+
+<br>
+
+`chrome.storage.sync.get()`の第一引数には取得する値に対応するキーを文字列か文字列の配列で指定します。第二引数のコールバックの引数には、取得したデータ(`result`)がオブジェクトの形式で送られてくるため、それを使って処理を行います。
+
+
+#### set(データの保存)
+
+`chrome.storage.sync.set({key, value})`
+`chrome.storage.sync.set()`の第一引数には、保存するデータのキーと値をオブジェクトの形式で指定します。
+
+<br>
+
+#### remove(データの削除)
+
+`chrome.storage.sync.remove(key)`
+
+<br>
+`chrome.storage.sync.remove()`の第一引数には、削除するデータのキーを文字列か文字列の配列で指定します。
+
+<br>
+
+
+#### clear(全てのデータの削除)
+
+`chrome.storage.sync.clear()`
+
+<br>
+`chrome.storage.sync.clear()`で、拡張機能の`chrome.storage`内に保存された全てのデータを削除することができます。
+
+<br>
+<br>
+
+## 値の変更を検知する
+
+`chrome.storage.onChanged.addListener()`を設定することで、`chrome.storage`のデータの値の変更を監視して、変更があったタイミングで処理を行うことができました。
+
+`chrome.storage.onChanged.addListener(changes => { callback })`
+コールバックの第一引数には、変更があったデータの変更前の値(`oldValue`)と変更後の値(`newValue`)が格納されています。例えば`foo`というキーの値が`bar`から`baz`に変更された場合、`changes`には次のようなオブジェクトが渡ってきます。
+
+
+`
+{
+  foo: {
+    newValue: 'baz',
+    oldValue: 'bar'
+  }
+}
+`
+
+この機能は次回、オプションページでテンプレートの文言を設定する機能を実装した時に利用します。
+
+
+
 
 
 
