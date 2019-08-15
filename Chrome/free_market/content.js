@@ -24,21 +24,33 @@ $templateUi.appendChild($templateButton);
 $descriptionForm.before($templateUi);
 
 
+
+// コンテンツスクリプトにて、ダミーデータをページ上に初期値として設定してます。
 const $shippingForm = {
     carriage: document.forms[0].carriage,
     area: document.forms[0].area,
     date: document.forms[0].date
 };
 
-
-// 初期値として設定する値（ダミーデータ）
-const initialValue = {
-    carriage: '2',
-    area: '13',
-    date: '1'
-};
-
-// ページ上のセレクトボックスの値に初期値を設定する
-Object.keys(initialValue).forEach(key => {
-    $shippingForm[key].value = initialValue[key];
+// セレクトボックスの選択値が変更されたら、値をchrome.storageに保存する
+chrome.storage.sync.get(Object.keys($shippingForm), result => {
+    Object.keys(result).forEach(key => {
+        $shippingForm[key].value = result[key];
+    });
 });
+
+// select要素のname属性をkeyとして、
+// 最後に選択したフォームの値をchrome.storageに保存
+Object.keys($shippingForm).forEach(key => {
+    $shippingForm[key].addEventListener('change', onChangeFormValue);
+});
+
+// select要素のname属性をkeyとして、
+// 最後に選択したフォームの値をchrome.storageに保存
+function onChangeFormValue(event) {
+    const key = event.target.getAttribute('name');
+    const value = event.target.value;
+    chrome.storage.sync.set({
+        [key]: value
+    });
+}
