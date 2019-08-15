@@ -1,19 +1,10 @@
-
-
-
-
 ## 今回作った拡張機能
 
 
 フリマサービスの出品ページの情報入力を楽にするための拡張機能を作る<br>
 
 
-
-
-
 ## 仕様の洗い出し
-
-
 
 <a href="https://pixel-market-demo.netlify.com/sell/">お題のフリマサイト</a>
 
@@ -36,6 +27,8 @@
 - 「商品の説明」にテンプレート機能を追加する
 - 「配送料の負担」、「発送元の地域」、「発送までの日数」のセレクトボックスに、前回入力した値が初期値となる機能を追加する
 
+<br>
+
 
 ## 仕様の策定
 
@@ -52,6 +45,210 @@
 
 
 また、どこのページにいても素早く出品ページを開けるように、拡張機能のアイコンから開くポップアップページに出品ページへのリンクを設置することにする。
+
+
+<br>
+<br>
+<br>
+
+## 第4回　ストレージ機能によるデータの保存と取得
+
+Chromeのストレージ機能であるchrome.storageを利用し、ユーザーが直前に選択したセレクトボックスの値を保存しておき、それを初期値として利用できるようにしていきます。
+
+
+
+<br>
+<br>
+
+## chrome.storageとは
+
+
+`chrome.storage`はユーザーデータの保存、取得、値の変更の検知ができます、似たような機能にはWeb標準のlocalStorageがありますが、`chrome.storage`には次のようなメリットがあります。
+
+<br>
+
+- Chromeの同期を使って、ユーザーがログインしている全てのChromeブラウザで自動的に同期させることができます。
+
+- バックグラウンドページを介さず、コンテンツスクリプトから直接データにアクセスできる
+
+- シークレットモードでもユーザーの設定を維持できる
+
+- lcoalStorageよりも高速
+
+- データをオブジェクトとして格納できる ( loccalStorageは文字列で格納する )
+
+- イベントリスナーで値の変更の検知できる
+
+
+
+```
+データの暗号化
+
+chrome.storageの記憶領域は暗号化されていないため、chrome.storageでは個人情報などの重要なユーザー情報は保存しないようにしましょう。
+
+<br>
+拡張機能内でそのような機密データを扱う必要がある場合は、独自にサーバーを用意するなどの対応が必要となります。
+
+```
+
+
+
+<br>
+<br>
+<br>
+
+
+## chrome.storageの使い方
+
+
+マニフェストの定義
+
+`chrome.storage`を使用するには、マニフェストでパーミッション(権限)を設定する必要があります。パーミッションを設定するには`manifest.json`の`permissions`キーに、設定する機能を値として指定します。
+
+
+manifest.json ↓
+
+```
+{
+  ...
+  "permissions" : [
+    "storage"
+   ]
+}
+
+```
+
+なお、パーミッションの設定で権限を与える機能は、その拡張機能に必要なものだけに制限するようにしましょう。権限を最小にしておくことで、拡張機能が攻撃者によって危険にさらされる可能性を減らすことができます。
+
+<br>
+
+パーミッション<br>
+
+```
+パーミッションの設定が必要なものには、ストレージ以外にもタブやコンテキストメニューなど様々な機能があります。また、ユーザーが任意で許可するかどうかを選択できる optional_permissionsキーもあります。
+
+```
+
+マニフェストのパーミッションを設定すると、拡張機能内のバックグラウンドページ、コンテンツスクリプト、オプションページなど、任意のJavaScript内で`chrome.storage`のAPIを利用できるようになります。
+
+
+<br>
+
+## chrome.storageの種類
+
+`chrome.storage`には、`sync`と`local`という2種類のAPIが用意されています。それぞれ特徴を見てみましょう。
+
+<br>
+
+
+<b>chrome.storage.stnc</b>
+
+`chrome.storage.sync`を使用して保存したデータはうユーザーが同期を有効にしている場合、ユーザーがログインしている全てのChromeブラウザに自動的に同期させます。`chrome.storage.sync`でのあたいの保存と取得は、次のように記述します。
+
+
+
+```
+// 'chrome.storage.sync'で値を保存する
+chrome.storage.sync.set({ key: value });
+
+// `chrome.storage.sync`で値を取得してコンソールに表示
+chrome.storage.sync.get([`key`], result => {
+  console.log('Value currently is ` + result.key);
+});
+```
+
+<b>chrome.storage.local</b>
+
+chrome.storage.localを使用して保存したデータは、同期されません。それ以外は、chrome.storageの各種APIをstorage.syncと同様に利用できます。chrome.storage.localでの値の保存と取得は、次のように記述します。
+
+
+```
+// 'chrome.storage.sync'で値を保存する
+chrome.storage.sync.set({ key: value });
+
+// `chrome.storage.sync`で値を取得してコンソールに表示
+chrome.storage.sync.get([`key`], result => {
+  console.log('Value currently is ` + result.key);
+});
+```
+
+
+<br>
+今回作成中のフリマサイトの拡張機能はユーザーがログインしている全てのChromeブラウザでデータを同期させたいため、`storage.sync`を利用することにします。
+
+<br>
+<br>
+
+#### データの取得、保存、削除のメソッド
+
+`chrome.storage`でデータの取得、保存、削除を行うには、次のメソッドを利用します。
+
+
+#### get(データの取得)
+
+`chrome.storage.sync.get(key, result => { callback } )`
+
+<br>
+
+`chrome.storage.sync.get()`の第一引数には取得する値に対応するキーを文字列か文字列の配列で指定します。第二引数のコールバックの引数には、取得したデータ(`result`)がオブジェクトの形式で送られてくるため、それを使って処理を行います。
+
+
+#### set(データの保存)
+
+`chrome.storage.sync.set({key, value})`
+`chrome.storage.sync.set()`の第一引数には、保存するデータのキーと値をオブジェクトの形式で指定します。
+
+<br>
+
+#### remove(データの削除)
+
+`chrome.storage.sync.remove(key)`
+
+<br>
+`chrome.storage.sync.remove()`の第一引数には、削除するデータのキーを文字列か文字列の配列で指定します。
+
+<br>
+
+
+#### clear(全てのデータの削除)
+
+`chrome.storage.sync.clear()`
+
+<br>
+`chrome.storage.sync.clear()`で、拡張機能の`chrome.storage`内に保存された全てのデータを削除することができます。
+
+<br>
+<br>
+
+## 値の変更を検知する
+
+`chrome.storage.onChanged.addListener()`を設定することで、`chrome.storage`のデータの値の変更を監視して、変更があったタイミングで処理を行うことができました。
+
+`chrome.storage.onChanged.addListener(changes => { callback })`
+コールバックの第一引数には、変更があったデータの変更前の値(`oldValue`)と変更後の値(`newValue`)が格納されています。例えば`foo`というキーの値が`bar`から`baz`に変更された場合、`changes`には次のようなオブジェクトが渡ってきます。
+
+
+```
+{
+  foo: {
+    newValue: 'baz',
+    oldValue: 'bar'
+  }
+}
+```
+
+
+この機能は、次回オプションページでテンプレートの文言を設定する機能を実装した時に利用します。
+
+<br>
+
+
+
+
+
+
+
+
 
 
 
