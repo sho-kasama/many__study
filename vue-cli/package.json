@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "mem": ">=4.0.0",
-    "lodash": ">=4.17.13",
+    "lodash": ">=4.17.21",
     "vue": "^2.5.11"
   },
   "browserslist": [
