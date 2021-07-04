@@ -1,0 +1,106 @@
+/* プロパティ定義 */
+:root {
+    --color-theme: #49beb7;
+}
+
+body {
+    display: flex;
+    margin-top: 250px;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    // 中央寄せ
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tooltip {
+    /* before内で position: absolute;を使っているため*/
+    position: relative;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+  
+    /*中身の情報*/
+    background: var(--color-theme);
+    border-radius: 100%;
+   
+    /* はてなマークの情報 */
+    &::before  {
+
+      /* 位置の情報 */
+      position: absolute;
+      display: inline-block;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(0.6);
+
+      /* 中身の情報 */
+      content: '?';
+      color: white;
+      font-size:100%;
+      font-weight: bold;
+    }
+
+    /* 説明文 */
+    .text {
+
+        /* 位置の情報 */
+        position: absolute;
+        display: block;
+        width: 14em;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 100%;
+
+        /* 中身の情報　*/
+        background: var(--color-theme);
+        color: white;
+        font-size: 12px;
+
+        /* 中身の見た目を変更する 吹き出しのパティング,吹き出しの影 */
+        padding: 10px;
+        line-height: 1.4;
+        border-radius: 6px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        pointer-events: none; // 吹き出しへのホバーを無視する
+
+        /* アニメーションの情報 */
+        transition: all 0,4s ease;
+        visibility: hidden;
+        opacity: 0;
+        bottom: 100%;
+        
+    
+
+        /* 吹き出しの尻尾 */
+        &::after {
+
+            /* 位置の情報 */
+            position: absolute;
+            display: block;
+            width: 10px;
+            height: 10px;
+            left: 50%;
+            bottom: -5px;
+            transform: rotateZ(45deg) rotateX(-50%);
+            transform-origin: left;
+
+            /* 中身の情報 */
+            content: '';
+            background: var(--color-theme);
+        }
+    }
+
+
+    &:hover {
+        .text {
+            /* アニメーションの情報 */
+            visibility: visible;
+            opacity: 1.0;
+            bottom: calc(100% + 10px);
+        }
+    }
+  }

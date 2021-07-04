@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* プロパティ定義 */
+:root {
+  --color-theme: #49beb7;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 250px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tooltip {
+  /* before内で position: absolute;を使っているため*/
+  position: relative;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  /*中身の情報*/
+  background: var(--color-theme);
+  border-radius: 100%;
+  /* はてなマークの情報 */
+  /* 説明文 */
+}
+
+.tooltip::before {
+  /* 位置の情報 */
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0.6);
+          transform: translate(-50%, -50%) scale(0.6);
+  /* 中身の情報 */
+  content: '?';
+  color: white;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+.tooltip .text {
+  /* 位置の情報 */
+  position: absolute;
+  display: block;
+  width: 14em;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 100%;
+  /* 中身の情報　*/
+  background: var(--color-theme);
+  color: white;
+  font-size: 12px;
+  /* 中身の見た目を変更する 吹き出しのパティング,吹き出しの影 */
+  padding: 10px;
+  line-height: 1.4;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  /* アニメーションの情報 */
+  -webkit-transition: all 0,4s ease;
+  transition: all 0,4s ease;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 100%;
+  /* 吹き出しの尻尾 */
+}
+
+.tooltip .text::after {
+  /* 位置の情報 */
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  left: 50%;
+  bottom: -5px;
+  -webkit-transform: rotateZ(45deg) rotateX(-50%);
+          transform: rotateZ(45deg) rotateX(-50%);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  /* 中身の情報 */
+  content: '';
+  background: var(--color-theme);
+}
+
+.tooltip:hover .text {
+  /* アニメーションの情報 */
+  visibility: visible;
+  opacity: 1.0;
+  bottom: calc(100% + 10px);
+}
+/*# sourceMappingURL=css-tip.css.map */
