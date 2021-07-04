@@ -1,0 +1,55 @@
+body {
+    padding: 50px 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+ul {
+    display: flex;
+justify-content: space-around;
+    width: 390px;
+}
+ul li {
+    font-family: 'Source Sans Pro', sans-serif;
+    list-style: none;
+    font-size: 26px;
+    border:solid #585858 2px;
+    border-radius: 400px;
+    width: 50px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    padding-top: 8px;
+}
+ul a {
+    color: #585858;
+}
+ul a:hover {
+    color: #000;
+}
+.tippy-popper {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#facebook li:hover {
+    background: #3b5999;
+    color: #fff;
+}
+#instagram li:hover {
+    background: #e4405f;
+    color: #fff;
+}
+#twitter li:hover {
+    background: #55acee;
+    color: #fff;
+}
+#codepen li:hover {
+    background: #3b5999;
+    color: #fff;
+}
+#behance li:hover {
+    background: #0069ff;
+    color: #fff;
+}
+#dribbble li:hover {
+    background: #e84c89;
+    color: #fff;
+}
